@@ -1,0 +1,12 @@
+{
+  "generated_at": null,
+  "mode": "free-no-account",
+  "api_endpoint": "/api/all",
+  "status": "placeholder",
+  "message": "Run npm run update or POST /api/update.",
+  "quick_view": {},
+  "fx": null,
+  "series": [],
+  "central_bank_news": [],
+  "errors": []
+}
