@@ -1,10 +1,12 @@
-name: Check
+name: Smoke Check
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * 1-5'
 
 jobs:
-  check:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,4 +14,8 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run check
+      - run: npm test
+      - name: Live public source smoke
+        env:
+          LIVE_SMOKE: 'true'
+        run: npm run smoke
