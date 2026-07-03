@@ -1,0 +1,19 @@
+{
+  "name": "market",
+  "version": "1.0.0",
+  "description": "Free no-account market data runner with JSON logs and one API endpoint.",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "update": "node server.js update",
+    "summary": "node server.js summary",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
